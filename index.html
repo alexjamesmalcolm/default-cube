@@ -11,9 +11,22 @@
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
     ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      #model {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <model-viewer
+      id="model"
       src="default-cube.glb"
       alt="A 3D model of a cube"
       auto-rotate
